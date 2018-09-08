@@ -1,0 +1,32 @@
+@startuml
+
+title Metodologi Penelitian
+
+
+start
+
+fork
+    :Studi Pustaka;
+    
+    repeat 
+        :Pengumpulan Data; 
+    
+        repeat
+            :Training Data;
+        repeat while ()
+    
+        :Testing;
+    
+        :Result;
+    
+        :Evaluate;
+    repeat while (Not Good Enough?)
+forkagain
+    repeat
+        :Dokumentasi dan Laporan;
+    repeat while (Not Good Enoguh?)
+endfork
+
+stop
+
+@enduml

@@ -1,0 +1,30 @@
+@startuml
+
+title Training Method For NLP and DT
+
+start
+
+fork
+  repeat
+    :Prepare Datasets For Traing NLP Model;
+    :Include User Suggestion;
+    :Train Using NLTK;
+    note right
+      This Model Will Learned Every day using Cron
+    end note
+  repeat while ()
+forkagain
+  repeat
+    :Gather Company and User Requirements;
+    while (Enough?) is (no)
+      :Crawl Data From Other Sites;
+    endwhile (yes) 
+    :Train Data;
+    note right
+      This Model Will Learned Every day using Cron
+    end note
+  repeat while ()
+endfork
+  stop
+
+@enduml
