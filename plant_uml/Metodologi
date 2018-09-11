@@ -1,32 +1,28 @@
 @startuml
 
-title Metodologi Penelitian
+title Tahapan Pengerjaan
 
 
 start
 
 fork
     :Studi Pustaka;
-    
-    repeat 
-        :Pengumpulan Data; 
-    
+
+    repeat
+        :Pengumpulan Data;
+
         repeat
             :Training Data;
         repeat while ()
-    
+
         :Testing;
-    
-        :Result;
-    
-        :Evaluate;
-    repeat while (Not Good Enough?)
+
+        :Evaluasi;
+    repeat while (Cukup baik?) is(Tidak)
 forkagain
     repeat
         :Dokumentasi dan Laporan;
-    repeat while (Not Good Enoguh?)
+    repeat while (Cukup baik?) is (Tidak)
 endfork
 
-stop
 
-@enduml
