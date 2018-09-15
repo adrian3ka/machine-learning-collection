@@ -1,0 +1,58 @@
+@startuml
+
+skinparam componentStyle uml2
+
+title Packages - Component Diagram
+
+package "Front End" as FE {
+    component [Chat Bot] as CB
+    component [Company Form] as CF
+    component [User Form] as UF
+}
+
+node Middleware {
+    [Clean From HTML / SQL Injection]
+}
+
+node Controller {
+    [Receive Information] as RI
+    [Send Information] as SI
+}
+ 
+node NLP {
+    [Word Tagging] as WT
+    [Sentence Processing] as SP 
+    [Collect Information] as CI
+    note left of CI : This step will parse and collect information from user chat
+} 
+
+node DecisionTree {
+    [Receive Data] as RD
+    [Decide from Model] as DM
+}
+
+database "MySQL" as DB {
+    [Trained Data]
+    [User Data]
+    [Company Data]
+    [Raw Data]
+}
+
+package "Information Gather" as IG {
+    component [Crawler] as CW
+}
+
+FE -down-> Middleware
+Middleware <--> Controller
+Controller <--> DB
+
+IG -down-> [Raw Data]
+Controller -down-> NLP
+WT -down-> SP
+SP -down-> CI
+NLP -down-> RD
+RD -down-> DM
+DM -up-> Controller
+DecisionTree .. [Trained Data]
+
+@enduml
