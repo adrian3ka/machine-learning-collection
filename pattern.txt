@@ -11,20 +11,27 @@
     "(r'ke.+(i|an)$', 'VB'),\n",
     "(r'se(baik|benar|layak|lekas|sungguh|yogya|sungguh|lanjut|balik|cepat)(nya)$', 'RB'), \n",
     "(r'(agak|akhir|biasa|kira|mesti|nyata|pokok|rasa|rupa|sayang|tampak|untung|khusus|umum|arti|bahwasa)(nya)$', 'RB'), \n",
+    "(r'(agak|amat|banget|benar-benar|hanya|hampir|jarang|juga|kadang-kadang|kerap|mungkin|memang|nyaris|paling|pula|saja|saling|sangat|segera|sekadar|selalu|semakin|serba|sering|sungguh|teramat|terkadang)$', 'RB'), \n",
     "(r'(sekadar|amat|bahkan|cukup|jua|justru|kembali|kurang|malah|mau|nian|niscaya|pasti|patut|perlu|lagi|pernah|pun|sekali|selalu|senantiasa|sering|sungguh|tentu|terus|lebih|hampir|jarang|juga|kerap|makin|memang|nyaris|paling|pula|saja|saling|sangat|segera|semakin|serba|entah|hanya|kadangkala|kurang|banyak|sedikit|baru)$', 'RB'),\n",
     "(r'(alkisah|arkian|syahdan|adapun|mengenai)$', 'RB')\n",
     "(r'(akan|antara|bagi|buat|dari|dengan|di|ke|kecuali|lepas|oleh|pada|per|peri|seperti|tanpa|tentang|untuk)$', 'IN')\n",
-    "(r'(dan|serta|atau|tetapi|melainkan|padahal|sedangkan)$','CC'), #konj koordinatif\n",
+    "(r'(bersama|beserta|menjelang|menuju|menurut|seantero|sekeliling|sekitar|selama|sepanjang|seputar|seluruh|terhadap|bagaikan|melalui|mengenai|daripada|kepada|oleh karena|oleh sebab|sampai ke|sampai dengan| selain dari)$', 'IN')\n",
+    "(r'(dan|serta|atau|ataupun|tetapi|melainkan|padahal|sedangkan)$','CC'), #konj koordinatif\n",
     "(r'(sejak|semenjak|sedari|sewaktu|ketika|tatkala|sementara|begitu|seraya|selagi|selama|serta|sambil|demi|setelah|sesudah|sebelum|sehabis|selesai|seusai|hingga|sampai|jika|kalau|jikalau|asal) $','SC'), #konj subordinatif\n",
-    "(r'(dan|serta|atau|tetapi|melainkan|padahal|sedangkan)$','CC'), #konj koordinatif\n",
     "(r'(alam|abad|insan|hewan)(i)$','JJ'), \n",
     "(r'(dunia|manusia|gereja|raga|surga)(wi)$','JJ'), \n",
     "(r'(alam|insan|amal)(iah)$','JJ'), \n",
     "(r'(normal|struktural|praktis|teknis|aktif|agresif|(komplemen|parlemen)(ter))$','JJ'), #gatau bisa apa kaga \n",
     "(r'((adi)(kodrati|busana|kuasa|luhung)|anasional|(antar)(bangsa|kota|perang)|asusila|awahama|diatonik|dispositif|dursila|ekstrakuriluler|hiperkorek|inframerah|internasional|(maha)(besar|kuasa|mulia|suci|tahu)|multinasional|(nir)(aksara|gelar)|panteistis|paranormal|(pasca)(jual|lahir)|prokomunis|purnawaktu|semipermanen|serbaguna|subtropis|superberat|swasembada|(tak)(organik|sosial)|(trans)(-Sumatra|kontinental)|(tuna)(karya|netra)|(ultra)(kanan|modern))$', 'JJ),\n",
-    "(r'((pe)(lupa|malas|malu|marah)$','JJ'), 
-    "(r'(aku|saya|engkau|kamu|Anda|dikau)$','PRP'), 
+    "(r'((pe)(lupa|malas|malu|marah)$','JJ'),\n",
+    "(r'((siapa|apa|mengapa|bagaimana|kenapa|apa|berapa|dimana|kapan|seseorang|sesuatu)$','PRP'),\n", #kata tanya
+    "(r'(aku|saya|hamba|kami|kita|engkau|kamu|kalian|Anda|dikau|kau|dia|beliau|mereka)$','PRP'), \n",
+    "(r'(senin|selasa|rabu|kamis|jumat|sabtu|minggu|januari|februari|maret|april|mei|juni|juli|agustus|september|oktober|november|desember)$','NNP'), \n",
+    "(r'(para|sang|si)$','DT'),\n",
+    "(r'(bukan|belum|jangan|tidak|tak)$','NEG'),\n",
+    "(r'(harus|ingin|mau|sudah|telah|mungkin|pernah)$','MD'),\n",
     "]
    ]
 #kadang, kadang-kadang, malahan, pelan-pelan, terlalu, tahu-tahu, setinggi-tingginya, setengah-setengah, sedikit-sedikit RB
 #merah, pura-pura, sia-sia, hati-hati, tiba-tiba JJ
+#|jangankan|kemudian|lalu|namun, aplagi
