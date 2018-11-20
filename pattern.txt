@@ -23,7 +23,7 @@
     "(r'(normal|struktural|praktis|teknis|aktif|agresif|(komplemen|parlemen)(ter))$','JJ'), #gatau bisa apa kaga \n",
     "(r'((adi)(kodrati|busana|kuasa|luhung)|anasional|(antar)(bangsa|kota|perang)|asusila|awahama|diatonik|dispositif|dursila|ekstrakuriluler|hiperkorek|inframerah|internasional|(maha)(besar|kuasa|mulia|suci|tahu)|multinasional|(nir)(aksara|gelar)|panteistis|paranormal|(pasca)(jual|lahir)|prokomunis|purnawaktu|semipermanen|serbaguna|subtropis|superberat|swasembada|(tak)(organik|sosial)|(trans)(-Sumatra|kontinental)|(tuna)(karya|netra)|(ultra)(kanan|modern))$', 'JJ),\n",
     "(r'((pe)(lupa|malas|malu|marah)$','JJ'), 
-    "(r'(aku|saya|engkau|kamu|Anda|dikau)$','JJ'), 
+    "(r'(aku|saya|engkau|kamu|Anda|dikau)$','PRP'), 
     "]
    ]
 #kadang, kadang-kadang, malahan, pelan-pelan, terlalu, tahu-tahu, setinggi-tingginya, setengah-setengah, sedikit-sedikit RB
