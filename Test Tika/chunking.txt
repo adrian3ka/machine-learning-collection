@@ -1,7 +1,3 @@
-NP: {<NN|NNP>+<CC><NN|NNP|NNG>+}
-NP: {<PRP><CC><NN|NNP|NNG>}
-NP: {<NN|NNP><CC><PRP>}
-NP: {<NN>+<CDO>}
 NP: {<NN>+<JJ>}
 NP: {<NN>+<DT>}
 NP: {<NN>+<PRP>}
