@@ -1,0 +1,34 @@
+$bash Anaconda2-5.2.0-Linux-x86_64.sh
+
+Enter terus sampai ada prompt, kemudian ketik yes
+Terus di akhir jawab yes lagi biar dikenali secara global
+Install VS-Code utk IDE nya biar enak, dengan ketik yes lagi
+Restart Computer
+
+buka terminal, ketik
+$conda --version
+
+harusnya akan keluar versi 4.5.4 kalau terinstall dengan benar
+
+
+install tensorflow  environment
+$conda create -n tensorflow python=2.7
+
+
+Active TensorFlow environment
+$source activate tensorflow
+$conda install -c conda-forge tensorflow
+$conda install pandas
+
+Install jupyter on TensorFlow environment
+$conda install jupyter
+
+
+
+
+untuk start
+$jupyter-notebook
+
+
+Convert ipynb to py
+jupyter nbconvert --to script 'my-notebook.ipynb'
