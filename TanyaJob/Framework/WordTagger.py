@@ -1,16 +1,6 @@
-
-# coding: utf-8
-
-# In[79]:
-
-
 from nltk.corpus import brown 
 import nltk 
 from nltk.tokenize import sent_tokenize, word_tokenize
-
-
-# In[84]:
-
 
 class TextTagger:
     bigram_tagger = nltk.tag.sequential.BigramTagger
